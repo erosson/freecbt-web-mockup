@@ -1,0 +1,23 @@
+/* @media (prefers-color-scheme: dark) { */
+    body {
+        background-color: black;
+        color: white;
+    }
+
+    a {
+        color: cyan;
+    }
+
+    a:visited {
+        color: pink;
+    }
+/* } */
+.slider {
+    display: flex;
+    scroll-snap-align: x mandatory;
+    overflow-x: scroll; 
+}
+section {
+    min-width: 100vw;
+    scroll-snap-align: start;
+}
