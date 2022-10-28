@@ -1,34 +1,95 @@
+body {
+	background-color: whitesmoke;
+	color: black;
+}
+/* @media (prefers-color-scheme: dark) { */
 @media (prefers-color-scheme: light) {
     body {
         background-color: black;
         color: white;
     }
-
     a {
         color: cyan;
     }
-
     a:visited {
         color: pink;
     }
+	textarea {
+		background-color: #222;
+		color: white;
+	}
+	textarea::placeholder {
+		color: lightgray;
+	}
 }
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
+.header {
+	position: absolute;
+	height: 3em;
+	width: 100%;
+	padding: 1em;
+}
 .slider {
+	padding-top: 5em;
     display: flex;
     scroll-snap-type: x mandatory;
 	scroll-behavior: auto;
     overflow-x: scroll; 
+    /* overflow-x: hidden;  */
 	-webkit-overflow-scrolling: touch;
-	min-height: 100vh;
+	/* min-height: 100vh; */
+	/* min-height: 100%; */
+	height: 100%;
+	padding-left: 6em;
+	padding-right: 6em;
+}
+html, 
+body {
+	height: 100%;
 }
 section {
+	/* border: 1px blue solid; */
     min-width: 100vw;
     scroll-snap-align: start;
 	position: relative;
+	padding: 1em;
+	padding-left: 6em;
+	padding-right: 6em;
+	margin-left: -5em;
+	margin-right: -5em;
+}
+textarea,
+button {
+	width: 100%;
+	padding: 1em;
+	border-radius: 1em;
+}
+textarea {
+	height: 10em;
+}
+
+textarea::placeholder {
+	padding-top: 3em;
+}
+button {
+	color: white;
+	background-color: blue;
+	font-weight: bold;
+}
+a.anchor {
+	opacity: 0.5;
+	text-decoration: none;
+}
+
+.bounds .header {
+	border: 1px solid green;
+}
+.bounds section {
+	border: 1px solid blue;
 }
 
 /* https://codepen.io/chriscoyier/pen/pMRgwW */

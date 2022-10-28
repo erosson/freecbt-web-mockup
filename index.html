@@ -3,29 +3,97 @@
     <head>
         <link rel="stylesheet" href="/index.css">
     </head>
-    <body class="slider">
-        <!-- <h1>FreeCBT</h1> -->
+    <body class="bounds">
+        <h1 class="header">FreeCBT</h1>
         <div class="slider">
-            <section>
-                <h2>Automatic Thought</h2>
-                <textarea>
-                </textarea>
+            <section id="ant">
+                <h2>
+                    Automatic Thought
+                    <a class="anchor" href="#ant">&para;</a>
+                </h2>
+                <textarea placeholder="ex: &quot;The plane might crash&quot;"></textarea>
             </section>
-            <section>
-                <h2>Select any distortions that apply.</h2>
-                <label><input type="radio">All or Nothing Thinking</label><br>
-                <label><input type="radio">All or Nothing Thinking</label><br>
-                <label><input type="radio">All or Nothing Thinking</label><br>
+            <section id="distortions">
+                <h2>
+                    Select any distortions that apply.
+                    <a class="anchor" href="#distortions">&para;</a>
+                </h2>
+                <label>
+                    <input type="checkbox">
+                    <b>🌓 All or Nothing Thinking</b>
+                    <p>ex: "That was a thorough waste of time"</p>
+                </label>
+                <label>
+                    <input type="checkbox">
+                    <b>🤯 Catastrophizing</b>
+                    <p>Focusing on the worst possible scenario</p>
+                </label>
+                <label>
+                    <input type="checkbox">
+                    <b>🎭 Emotional Reasoning</b>
+                    <p>ex: "I feel afraid, so I'll have a panic attack"</p>
+                </label>
+                <label>
+                    <input type="checkbox">
+                    <b>🔮 Fortune Telling</b>
+                    <p>ex: "I'll get sick at the party"</p>
+                </label>
+                <label>
+                    <input type="checkbox">
+                    <b>🏷 Labeling</b>
+                    <p>ex: "He's a jerk"</p>
+                </label>
+                <label>
+                    <input type="checkbox">
+                    <b>👎 Magnification of the Negative</b>
+                    <p>Focusing only on what went wrong</p>
+                </label>
+                <label>
+                    <input type="checkbox">
+                    <b>👍 Minimization of the Positive</b>
+                    <p>Ignoring the good things that happened</p>
+                </label>
+                <label>
+                    <input type="checkbox">
+                    <b>🧠 Mind Reading</b>
+                    <p>ex: "I'll bet he hates me now"</p>
+                </label>
+                <label>
+                    <input type="checkbox">
+                    <b>🧛‍ Other Blaming</b>
+                    <p>Assigning all the blame to someone else</p>
+                </label>
+                <label>
+                    <input type="checkbox">
+                    <b>👯‍ Over Generalization</b>
+                    <p>ex: "Everyone will let me down"</p>
+                </label>
+                <label>
+                    <input type="checkbox">
+                    <b>👁 Self Blaming</b>
+                    <p>Taking all the blame on yourself</p>
+                </label>
+                <label>
+                    <input type="checkbox">
+                    <b>✨ Should Statements</b>
+                    <p>ex: "I should have known better"</p>
+                </label>
             </section>
-            <section>
-                <h2>Challenge the thought.</h2>
-                <textarea>
-                </textarea>
+            <section id="challenge">
+                <h2>
+                    Challenge the thought.
+                    <a class="anchor" href="#challenge">&para;</a>
+                </h2>
+                <textarea placeholder="It might not be true that..."></textarea>
             </section>
-            <section>
-                <h2>Write an alternative thought.</h2>
-                <textarea>
-                </textarea>
+            <section id="alternative">
+                <h2>
+                    Write an alternative thought.
+                    <a class="anchor" href="#alternative">&para;</a>
+                </h2>
+                <p>This isn't a challenge, it's a way to cement an alternative thought.</p>
+                <textarea placeholder="What could we think instead?"></textarea>
+                <button class="submit">Save & Finish</button>
             </section>            
         </div>
     </body>
