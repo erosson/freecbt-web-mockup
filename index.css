@@ -59,7 +59,23 @@ a.anchor {
 }
 label {
     display: block;
-    padding-top: 0.5em;
+	border-radius: 0.5em;
+	border: 2px inset grey;
+	background-color: white;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+input[type=checkbox] {
+	/* opacity: 0; */
+	display: none;
+}
+.check {
+	display: none;
+}
+input:checked ~ .check {
+	display: inline;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -81,6 +97,9 @@ label {
     textarea::placeholder {
         color: gray;
     }
+	label {
+		background-color: #222;
+	}
 }
 @media screen and (max-width: 480px) {
 /* @media screen and (max-width: 48000px) { */
