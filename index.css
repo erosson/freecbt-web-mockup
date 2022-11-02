@@ -11,7 +11,7 @@ body {
     position: absolute;
     height: 3em;
     width: 100%;
-    padding: 1em;
+    padding: 0.5em;
 }
 .slider {
     padding-top: 5em;
@@ -33,11 +33,11 @@ button {
 textarea {
     width: 100%;
     max-width: 80em;
-    height: 10em;
+    height: 16em;
 }
 
 textarea::placeholder {
-    padding-top: 3em;
+    padding-top: 6em;
 }
 button {
     display: block;
@@ -137,16 +137,16 @@ input:checked+label p {
         /* min-height: 100vh; */
         /* min-height: 100%; */
         height: 100%;
-        padding-left: 6em;
-        padding-right: 6em;
+        padding-left: 3em;
+        padding-right: 3em;
     }
     section {
         min-width: 100vw;
         scroll-snap-align: start;
-        padding-left: 6em;
-        padding-right: 6em;
-        margin-left: -5em;
-        margin-right: -5em;
+        padding-left: 3em;
+        padding-right: 3em;
+        margin-left: -2em;
+        margin-right: -2em;
     }
     textarea {
        max-width: 800em;
